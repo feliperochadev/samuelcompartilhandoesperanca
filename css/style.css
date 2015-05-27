@@ -117,15 +117,21 @@ div.col {
 #divNovidades
 {
     height: 423px;
+    background-image: url(/images/fundoNovidades.png);
+    text-align: center;
 }
 
 #divNovidades a
 {
-    padding-left: 20px;
     font-family: DarlinPop;
     font-weight: bold;
-    font-size: 20px;
-    color: 
+    font-size: 20px; 
+    color: #0052da  
+}
+
+#divNovidades a:hover
+{
+    color: red; 
 }
 
 #divVideos{
