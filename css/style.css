@@ -114,9 +114,22 @@ div.col {
 }
 
 
-.divNovidades
+#divNovidades
 {
-    height: 595px;
+    height: 423px;
+}
+
+#divNovidades a
+{
+    padding-left: 20px;
+    font-family: DarlinPop;
+    font-weight: bold;
+    font-size: 20px;
+    color: 
+}
+
+#divVideos{
+    height: 423px;
 }
 
 .divFotos
@@ -1061,6 +1074,13 @@ header h1 {
     margin-top: 40px;
 }
 
+}
+
+.linksRodape
+{
+    display: table-cell;
+    vertical-align: middle; 
+    height: 60px;
 }
 
 
