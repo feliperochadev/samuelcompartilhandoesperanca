@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Samuel Compartilhando Esperança</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.1.1.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.ui.totop.js"></script>
+	<script src="js/superfish.js"></script>
+	<script src="js/jquery.equalheights.js"></script>
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/kwiks.js"></script>
+	<script>
+	$(document).ready(function(){
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		var owl = $("#owl");
+		owl.owlCarousel({
+      		autoPlay: 5000, //Set AutoPlay to 5 seconds
+      		singleItem : true,
+      		navigation: true,
+      	});
+	})
+	var Main = Main || {};
+	jQuery(window).load(function() {
+		window.responsiveFlag = jQuery('#responsiveFlag').css('display');
+		Main.gallery = new Gallery();
+		jQuery(window).resize(function() {
+			Main.gallery.update();
+		});
+	});
+	function Gallery(){
+		var self = this,
+		container = jQuery('.flexslider'),
+		clone = container.clone( false );
+		this.init = function (){
+			if( responsiveFlag == 'block' ){
+				var slides = container.find('.slides');
+				slides.kwicks({
+					max : 500,
+					spacing : 0
+				}).find('li > a').click(function (){
+					return false;
+				});
+			} else {
+				container.flexslider();
+			}
+		}
+		this.update = function () {
+			var currentState = jQuery('#responsiveFlag').css('display');
+			if(responsiveFlag != currentState) {
+				responsiveFlag = currentState;
+				container.replaceWith(clone);
+				container = clone;
+				clone = container.clone( false );
+				this.init();
+			}
+		}
+		this.init();
+	}
+	</script>
+
+		<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+			</a>
+		</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body class="page1" id="top">
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=843047945778977";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<!--==============================header=================================-->
+		<header>
+			<div class="clear"></div>
+			<div class="container_12">
+				<div class="grid_3">
+					<h1>
+						<a href="index.html">
+							<img src="images/logo.png" alt="Your Happy Family">
+						</a>
+					</h1>
+				</div>
+				<div class="textoHeader grid_7">
+					<strong class="DarlinPop corPadraoTexto">
+						Samuel tem 18 meses, e possui uma sindrome neurológica rara chamada ERRO INATO DE METABOLISMO. Precisamos arrecadar fundos para ir ao Boston Children Hospital nos Estados Unidos, referência mundial no tratamento da sindrome, para fechamento do diagnóstico, e se possível, um tratamento.
+					</strong>
+				</div>
+				<div class="fotoHeader grid_2">
+					<img src="images/fotoHeader.png">
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+		<div class="main">
+			<!--==============================Content=================================-->
+			<div class="content"><div class="ic"></div>
+			<div class="container_12">
+				<div class="grid_8">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<div id="owl" class="owl-carousel">
+									<div class="item"><img src="images/foto1.jpg"/></div>
+									<div class="item"><img src="images/foto2.jpg"/></div>
+									<div class="item"><img src="images/foto3.jpg"/></div>
+									<div class="item"><img src="images/foto4.jpg"/></div>
+									<div class="item"><img src="images/foto5.jpg"/></div>
+									<div class="item"><img src="images/foto6.jpg"/></div>
+									<div class="item"><img src="images/foto7.jpg"/></div>
+								</div>
+								<div class="flex-caption">
+									<p>Fotos</p>
+								</div>
+							</li>
+							<li>
+								<div id="videos">
+								</div>
+								<div class="flex-caption c2">
+									<p>Videos</p>
+								</div>
+							</li>
+							<li>
+								<div class="divNovidades">
+									<div>
+										<div class="flex-caption">
+											<p>Novidades</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<span id="responsiveFlag"></span>
+						</div>
+						<div class="grid_4">
+							<div class="text1">PRECISAMOS DA SUA AJUDA!</div>
+							<p>Doe qualquer valor através dos meios abaixo:</p>
+							<div class="center">
+								<p>PagSeguro: <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+									<form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+										<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+										<input type="hidden" name="currency" value="BRL" />
+										<input type="hidden" name="receiverEmail" value="samuelcompartilhandoesperanca@gmail.com" />
+										<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/120x53-doar.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+									</form>
+									<!-- FINAL FORMULARIO BOTAO PAGSEGURO --></p>
+
+									<p>PayPal: <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+										<input type="hidden" name="cmd" value="_donations">
+										<input type="hidden" name="business" value="samuelcompartilhandoesperanca@gmail.com">
+										<input type="hidden" name="lc" value="BR">
+										<input type="hidden" name="item_name" value="Campanha Samuel Compartilhando Esperança">
+										<input type="hidden" name="no_note" value="0">
+										<input type="hidden" name="currency_code" value="BRL">
+										<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+										<input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
+										<img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+									</form>
+								</p>
+								<br/>
+								<p>Contas para doações a partir de R$ 2,00:</p>
+								<br/>
+							</div>
+							<div>
+								<div class="col">
+									<img src="images/caixaLogo.jpg" />
+								</br>
+								<p>Nome: Samuel Oliveira Nunes</p>
+								<p>Agência: 0306</p>
+								<p>Conta: 27058-5</p>
+								<p>Poupança: 013</p>
+								<br/>
+							</div>
+							<div class="col">
+								<img src="images/bbLogo.jpg" />
+							</br>
+							<p>Nome: Samuel Oliveira Nunes</p>	
+							<p>Agência: 6513-7</p>
+							<p>Conta poupança: 9458-7</p>
+							<p>Variação: 51</p>
+							<br/>
+						</div>
+						<div>
+							<p>Internet Banking dos principais bancos:</p>
+						</div>
+						<div class="col">
+							<a href="https://internetbanking.caixa.gov.br" target="_blank">Acessar Caixa</a><br/>
+							<a href="http://www.bradesco.com.br/html/classic/index.shtm" target="_blank">Acessar Bradesco</a><br/>
+							<a href="https://www.hsbc.com.br/1/2/" target="_blank">Acessar HSBC</a>
+						</div>	
+						<div class="col">
+							<a href="https://www2.bancobrasil.com.br/aapf/login.jsp" target="_blank">Acessar Banco do Brasil</a><br/>
+							<a href="https://www.itau.com.br/" target="_blank">Acessar Itau</a><br/>
+							<a href="http://www.santander.com.br/" target="_blank">Acessar Santander</a>
+						</div>		
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="grid_4">
+					<div class="block2 maxheight">
+						<div class="title">A História<br/></div>
+						<div class="pad">
+							Conteúdo.
+						</div>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="block2 maxheight">
+						<div class="title">O Samuca<br/></div>
+						<div class="pad">
+							Conteúdo.
+						</div>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="block2 maxheight">
+						<div class="title">Os Recursos Necessários</div>
+						<div class="pad">
+							Conteúdo.
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="grid_12">
+					<h3 style="text-align: center">Compartilhe a esperança nas redes sociais:</h3>
+				</div>
+				<div class="grid_6">
+					<div class="fb-page" data-href="https://www.facebook.com/pages/Samuel-compartilhando-esperan%C3%A7a/648041448630451?fref=ts" data-width="450" data-height="600" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Samuel-compartilhando-esperan%C3%A7a/648041448630451?fref=ts"><a href="https://www.facebook.com/pages/Samuel-compartilhando-esperan%C3%A7a/648041448630451?fref=ts">Samuel compartilhando esperança</a></blockquote></div></div>
+				</div>
+				<div class="grid_6">
+					<h3>TWITTER</h3>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<!--==============================footer=================================-->
+		<footer>
+			<div class="hor bg3"></div>
+			<div class="container_12">
+				<div class="grid_12 ">
+					<span class="copy">
+						<strong>Apoio Voluntário:</strong> <a href="#" target="_blank">Privacy Policy</a>
+					</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
