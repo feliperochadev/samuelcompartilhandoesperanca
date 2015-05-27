@@ -1080,6 +1080,9 @@ header h1 {
     margin-top: 40px;
 }
 
+.flex-direction-nav a.flex-next, .flex-direction-nav a.flex-prev {
+display:none; }
+
 }
 
 .linksRodape
