@@ -117,7 +117,7 @@ div.col {
 #divNovidades
 {
     height: 423px;
-    background-image: url(/images/fundoNovidades.png);
+    background-image: url(../images/fundoNovidades.png);
     text-align: center;
 }
 
