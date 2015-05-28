@@ -113,11 +113,16 @@ div.col {
     width: 50%;
 }
 
+.slides
+{
+    background-image: url(../images/fundoSlide.jpg);
+    border-radius: 10px;
+}
 
 #divNovidades
 {
     height: 423px;
-    background-image: url(../images/fundoNovidades.png);
+    
     text-align: center;
 }
 
@@ -138,13 +143,10 @@ div.col {
     height: 423px;
 }
 
-.divFotos
+.fotoSlide
 {
-    width: 500px;
-}
-
-.divFotos img{
-    width: 500px;
+    width: 80%;
+    height: 80%;
 }
 
 
