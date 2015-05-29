@@ -54,7 +54,29 @@ a{
 body {
 	position: relative;
 	min-width: 1050px;
-    background: rgb(132, 203, 242);
+    /*background: rgb(132, 203, 242);*/
+
+  /* Location of the image */
+    background-image: url(../images/wallpaper.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+  
+  /* Background image doesn't tile */
+    background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+    background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+    background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+    background-color: #5D9CC5;
+
     color: #4c4c4c;
     font: 14px/20px Arial, Helvetica, sans-serif;
 }
@@ -145,8 +167,15 @@ div.col {
 
 .fotoSlide
 {
-    width: 80%;
+    width: 90%;
     height: 80%;
+    padding-left: 5%;
+    text-align: center;
+}
+
+.videoSlide
+{
+    text-align: center;
 }
 
 
@@ -351,7 +380,7 @@ a.btn:hover {
 .main {
     width: 1050px;
     margin: 0 auto 57px;
-    background-color: rgb(132, 203, 242);
+    /*background-color: #5D9CC5;*/
 }
 
 
@@ -361,6 +390,7 @@ header {
     padding-top: 24px;
     padding-bottom: 16px;
     position: relative;
+    /*background-color: #5D9CC5;*/
 
 }
 
