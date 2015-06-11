@@ -486,6 +486,10 @@ a.donate:hover {
     padding: 41px 22px 19px;
 }
 
+.pad p {
+    text-align: justify;
+}
+
 .st1 {
     padding-top: 12px;
     margin-bottom: 13px;
