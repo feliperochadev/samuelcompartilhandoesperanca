@@ -1,0 +1,173 @@
+.foto-slide1{
+	background-image: url('../images/fotosSlidesJuntas.jpg');
+	background-position: 0px 0px;
+	width: 550px;
+	height: 400px;
+	text-align: center;
+	margin-left: 5%;
+}
+.foto-slide2{
+	background-image: url('../images/fotosSlidesJuntas.jpg');
+	background-position:  550px 0px;
+	width: 550px;
+	height: 400px;
+	text-align: center;
+	margin-left: 5%;
+}
+.foto-slide3{
+	background-image: url('../images/fotosSlidesJuntas.jpg');
+	background-position: 1100px 0px;
+	width: 550px;
+	height: 400px;
+	text-align: center;
+	margin-left: 5%;
+}
+.foto-slide4{
+	background-image: url('../images/fotosSlidesJuntas.jpg');
+	background-position: 1650px 0px;
+	width: 550px;
+	height: 400px;
+	text-align: center;
+	margin-left: 5%;
+}
+
+.parceiro-accetur{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  0px 0px;
+	display: inline-block;
+}
+.parceiro-cafib{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  570px 0px;
+	display: inline-block;
+}
+.parceiro-canilitanhandu{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  290px 0px;
+	display: inline-block;	
+}
+.parceiro-canilitapua{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  430px 0px;
+	display: inline-block;	
+}
+.parceiro-casadooleo{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  140px 0px;
+	display: inline-block;	
+}
+.parceiro-colinaitame{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  0px 180px;
+	display: inline-block;	
+}
+.parceiro-eskimosorvetes{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  570px 180px;
+	display: inline-block;	
+}
+.parceiro-hotelstaclara{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  430px 180px;
+	display: inline-block;	
+}
+.parceiro-imperiodoacai{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  285px 180px;	
+	display: inline-block;
+}
+.parceiro-linahairdesign{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  140px 180px;
+	display: inline-block;	
+}
+.parceiro-marykay{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  0px 120px;
+	display: inline-block;	
+}
+.parceiro-maximosupermercados{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  570px 120px;
+	display: inline-block;	
+}
+.parceiro-mwprint{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  430px 120px;
+	display: inline-block;	
+}
+.parceiro-pousadastaceia{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  290px 120px;
+	display: inline-block;	
+}
+.parceiro-queen{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  140px 120px;
+	display: inline-block;	
+}
+.parceiro-sonhodospes{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  0px 60px;
+	display: inline-block;	
+}
+.parceiro-sumire{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  571px 60px;
+	display: inline-block;	
+}
+
+.img-caixa{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  430px 60px;
+	display: inline-block;	
+}
+
+
+.img-banco-brasil{
+	background-image: url('../images/parceiros.jpg');
+	width: 140px;
+	height: 60px;
+	background-position:  290px 60px;
+	display: inline-block;	
+}
+
+
+
+
