@@ -23,78 +23,7 @@
 	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/magnific-popup.css"> 
-	<script src="js/jquery.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/jquery.ui.totop.js"></script>
-	<script src="js/superfish.js"></script>
-	<script src="js/jquery.equalheights.js"></script>
-	<script src="js/jquery.mobilemenu.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/jquery.flexslider-min.js"></script>
-	<script src="js/kwiks.js"></script>
-	<script src="js/magnific-popup.js"></script>
-	<script>
-	$(document).ready(function(){
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		$(".flexslider .slides > li").width('100%');
-		$("#owl").owlCarousel({
-			navigation : false, 
-			slideSpeed : 200,
-			paginationSpeed : 300,
-			autoPlay : true,
-			singleItem: true
-		});
-		$("#owl1").owlCarousel({
-			navigation : true, 
-			slideSpeed : 200,
-			paginationSpeed : 300,
-			autoPlay : false,
-			singleItem: true
-		});
-		$(".flexslider .slides > li").width('33.3%');
-		$('.ajax-popup-link').magnificPopup({
-			type: 'ajax'
-		});
-	})
-	var Main = Main || {};
-	jQuery(window).load(function() {
-		window.responsiveFlag = jQuery('#responsiveFlag').css('display');
-		Main.gallery = new Gallery();
-		jQuery(window).resize(function() {
-			Main.gallery.update();
-		});
-	});
-	function Gallery(){
-		var self = this,
-		container = jQuery('.flexslider'),
-		clone = container.clone( false );
-		this.init = function (){
-			if( responsiveFlag == 'block' ){
-				var slides = container.find('.slides');
-				slides.kwicks({
-					max : 595,
-					spacing : 0
-				}).find('li > a').click(function (){
-					return false;
-				});
-			} else {
-				container.flexslider();
-			}
-		}
-		this.update = function () {
-			var currentState = jQuery('#responsiveFlag').css('display');
-			if(responsiveFlag != currentState) {
-				responsiveFlag = currentState;
-				container.replaceWith(clone);
-				container = clone;
-				clone = container.clone( false );
-				this.init();
-			}
-		}
-		this.init();
-	}
-	</script>
+	<link rel="stylesheet" href="css/img-parceiros-fotos-split.css">
 		<!--[if lt IE 8]>
 		<div style=' clear: both; text-align:center; position: relative;'>
 			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -108,26 +37,18 @@
 		<![endif]-->
 	</head>
 	<body class="page1" id="top">
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=843047945778977";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
 		<!--==============================header=================================-->
 		<header>
 			<div class="clear"></div>
 			<div class="container_12">
-				<div class="grid_3">
+				<div class="grid_2">
 					<h1>
 						<a href="index.html">
 							<img src="images/logo.png" alt="Samuel Compartilhando Esperança">
 						</a>
 					</h1>
 				</div>
-				<div class="textoHeader grid_9">
+				<div class="textoHeader grid_10">
 					<strong class="DarlinPop corPadraoTexto">
 						Samuca tem 18 meses, e possui uma sindrome neurológica rara, chamada ERRO INATO DE METABOLISMO. Precisamos arrecadar fundos para ir ao Boston Children Hospital nos Estados Unidos, referência mundial no tratamento da sindrome, para fechamento do diagnóstico, e se possível, um tratamento.
 					</strong>
@@ -177,10 +98,10 @@
 										</li>
 										<li>
 											<div id="owl" class="owl-carousel" style="display: inline" >
-												<div class="fotoSlide"><img src="images/foto1.jpg"/></div>
-												<div class="fotoSlide"><img src="images/foto2.jpg"/></div>
-												<div class="fotoSlide"><img src="images/foto3.jpg"/></div>
-												<div class="fotoSlide"><img src="images/foto4.jpg"/></div>
+												<div class="foto-slide1"></div>
+												<div class="foto-slide2"></div>
+												<div class="foto-slide3"></div>
+												<div class="foto-slide4"></div>
 											</div>
 											<div class="flex-caption c2">
 												<p>Fotos</p>
@@ -189,8 +110,6 @@
 												<div id="divNovidades">
 													<br/>
 													<p><a href="novidades/baile06-07-15.html" class="ajax-popup-link">06/07/2015 - Baile da esperança</a></p>
-													<br/>
-													<p><a href="novidades/caldinho11-06-15.html" class="ajax-popup-link">11/06/2015 - Caldinho da esperança</a></p>
 													<br/>
 													<p><a href="novidades/postoDoacao.html" class="ajax-popup-link">Seja um posto de doação e compartilhe a esperança!</a></p>
 													<br/>
@@ -235,7 +154,7 @@
 									</div>
 									<div>
 										<div class="col">
-											<img src="images/caixaLogo.jpg" />
+											<span class="img-caixa" ></span>
 										</br>
 										<p>Nome: Samuel Oliveira Nunes</p>
 										<p>Agência: 0306</p>
@@ -244,7 +163,7 @@
 										<br/>
 									</div>
 									<div class="col">
-										<img src="images/bbLogo.jpg" />
+										<span class="img-banco-brasil" ></span>
 									</br>
 									<p>Nome: Samuel Oliveira Nunes</p>	
 									<p>Agência: 6513-7</p>
@@ -302,17 +221,7 @@
 									</div>
 								</div>
 								<div class="clear"></div>
-								<div class="grid_12">
-									<h3 style="text-align: center">Compartilhe a esperança nas redes sociais:</h3>
-								</div>
-								<div class="grid_6">
-									<div class="fb-page" data-href="https://www.facebook.com/pages/Samuel-compartilhando-esperan%C3%A7a/648041448630451?fref=ts" data-width="450" data-height="600" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Samuel-compartilhando-esperan%C3%A7a/648041448630451?fref=ts"><a href="https://www.facebook.com/pages/Samuel-compartilhando-esperan%C3%A7a/648041448630451?fref=ts">Samuel compartilhando esperança</a></blockquote></div></div>
-								</div>
-								<div class="grid_6">
-									<a class="twitter-timeline" href="https://twitter.com/samuelesperanca" data-widget-id="603443356228853760">Tweets #samuelcompartilhandoesperanca</a>
-									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-									<div class="clear"></div>
-								</div>
+								<div id="socials"><div>
 							</div>
 						</div>
 						<!--==============================footer=================================-->
@@ -322,23 +231,23 @@
 								<div class="grid_10" style="display:table-cell;">
 									<span style="font-family: DarlinPop; font-weight: bold;font-size: 16px; color: #0052da; width:30px;height:60px;vertical-align:middle">Apoio voluntário: </span>
 									<br/>
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/accetur.jpg" alt="Accetur">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/cafib.jpg" alt="Cafib">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/canilitanhandu.jpg" alt="Canil Itanhadu">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/canilitapua.jpg" alt="Canil Itapua">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/casadooleo.jpg" alt="Casa do Óleo">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/colinaitame.jpg" alt="Canil Itame">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/eskimosorvetes.jpg" alt="Eskimo Sorvetes">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/hotelstaclara.jpg" alt="Hotel Santa Clara">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/imperiodoacai.jpg" alt="Imperio do Açai">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/linahairdesign.jpg" alt="Lina Hair Design">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/marykay.jpg" alt="Mary Kay">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/maximosupermercados.jpg" alt="Maximo Supermercados">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/mwprint.jpg" alt="MW Print">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/pousadastaceia.jpg" alt="Pousada Santa Ceia">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/queen.jpg" alt="Queen">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/sonhodospes.jpg" alt="Sonho dos pés">
-									<img style="width:150px;height:60px;vertical-align:middle" src="images/parceiros/sumire.jpg" alt="Sumire">	
+								    <span class="parceiro-accetur"></span>
+								    <span class="parceiro-cafib" ></span>
+								    <span class="parceiro-canilitanhandu" ></span>
+								    <span class="parceiro-canilitapua" ></span>
+								    <span class="parceiro-casadooleo" ></span>
+								    <span class="parceiro-colinaitame" ></span>
+								    <span class="parceiro-eskimosorvetes" ></span>
+								    <span class="parceiro-hotelstaclara" ></span>
+								    <span class="parceiro-imperiodoacai" ></span>
+								    <span class="parceiro-linahairdesign" ></span>
+								    <span class="parceiro-marykay" ></span>
+								    <span class="parceiro-maximosupermercados" ></span>
+								    <span class="parceiro-mwprint" ></span>
+								    <span class="parceiro-pousadastaceia" ></span>
+								    <span class="parceiro-queen" ></span>
+								    <span class="parceiro-sonhodospes" ></span>
+								    <span class="parceiro-sumire" ></span>
 								</div>
 								<div class="grid_2" style="display:table-cell;">
 									<span style="font-family: DarlinPop; font-weight: bold;font-size: 16px; color: #0052da; width:30px;height:60px;vertical-align:middle">Desenvolvido voluntáriamente por: </span>
@@ -348,4 +257,75 @@
 						</footer>
 					</div>
 				</body>
+				<script src="js/jquery.js"></script>
+				<script src="js/owl.carousel.js"></script>
+				<script src="js/jquery.flexslider-min.js"></script>
+				<script src="js/magnific-popup.js"></script>
+				<script src="js/jquery.easing.1.3.js"></script>
+				<script src="js/jquery.ui.totop.js"></script>
+				<script src="js/kwiks.js"></script>
+				<script >
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					$(".flexslider .slides > li").width('100%');
+					$("#owl").owlCarousel({
+						navigation : false, 
+						slideSpeed : 200,
+						paginationSpeed : 300,
+						autoPlay : true,
+						singleItem: true
+					});
+					$("#owl1").owlCarousel({
+						navigation : true, 
+						slideSpeed : 200,
+						paginationSpeed : 300,
+						autoPlay : false,
+						singleItem: true
+					});
+					$(".flexslider .slides > li").width('33.3%');
+					$('.ajax-popup-link').magnificPopup({
+						type: 'ajax'
+					});
+					$.get('socialPages-ajax.html', function(data) {
+    					$('#socials').html(data);
+  					});
+				})
+				var Main = Main || {};
+				jQuery(window).load(function() {
+					window.responsiveFlag = jQuery('#responsiveFlag').css('display');
+					Main.gallery = new Gallery();
+					jQuery(window).resize(function() {
+						Main.gallery.update();
+					});
+				});
+				function Gallery(){
+					var self = this,
+					container = jQuery('.flexslider'),
+					clone = container.clone( false );
+					this.init = function (){
+						if( responsiveFlag == 'block' ){
+							var slides = container.find('.slides');
+							slides.kwicks({
+								max : 595,
+								spacing : 0
+							}).find('li > a').click(function (){
+								return false;
+							});
+						} else {
+							container.flexslider();
+						}
+					}
+					this.update = function () {
+						var currentState = jQuery('#responsiveFlag').css('display');
+						if(responsiveFlag != currentState) {
+							responsiveFlag = currentState;
+							container.replaceWith(clone);
+							container = clone;
+							clone = container.clone( false );
+							this.init();
+						}
+					}
+					this.init();
+				}
+				</script>
 				</html>
